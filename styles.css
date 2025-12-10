@@ -1,5 +1,6 @@
-html {
+* {
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 .site-header {
@@ -39,15 +40,12 @@ html {
     border-radius: 999px;
     text-indent: 30px;
 }
-.home:before {
+
+.home:hover {
+    color: transparent;
     background-image: linear-gradient(to right, #8a24a3, #d38ae5);
     background-clip: text;
-    color: transparent;
-    clip-path: inset(0 100% 0 0);
-    transition: clip-path 0.3s ease;
-}
-.home:hover {
-    clip-path: inset(0 0 0 0)
+    transition: background-image 0.3s ease-in-out;
 }
 .lore:hover {
     color: transparent;
@@ -60,4 +58,21 @@ html {
     background-image: linear-gradient(to right, #8a24a3, #d38ae5);
     background-clip: text;
     transition: background-image 0.3s ease-in-out;
+}
+.banner {
+    display: flex;
+    margin-left: -90px;
+    opacity: 0.9;
+    filter: brightness(0.5)
+}
+.description {
+    font-family: Impact;
+    background-color: black;
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 130px;
 }
