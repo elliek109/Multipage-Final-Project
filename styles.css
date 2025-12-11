@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 body {
@@ -14,6 +15,9 @@ body {
 
 .site-header {
     background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .nav {
@@ -22,20 +26,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .brand img {
+    position: sticky;
+    top: 0;
     width: 120px;
     height: 120px;
     object-fit: contain;
+    z-index: 999;
 }
 
 .nav-links {
+    position: sticky;
+    top: 0;
     display: flex;
     list-style: none;
     gap: 1.5rem;
     margin: 0;
     padding: 0;
+    z-index: 999;
 }
 
 .nav-links a {
@@ -64,20 +77,56 @@ body {
     object-fit: cover;
     opacity: 0.9;
     filter: brightness(0.5);
+    border-bottom: 5px solid #747474;
+    z-index: -999;
 }
 
 /* Description */
-
-.description {
-    font-family: Impact, sans-serif;
-    font-size: 36px;
+.details {
+    display: flex;
     text-align: center;
-    margin: 2rem 0 1rem;
+    margin: 0 auto;
+    padding: 0 30px;
 }
-
-.description-text {
-    font-size: 16px;
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    line-height: 1.6;
+.infoText {
+    color: white;
+}
+.infoList {
+    color: white;
+}
+p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-wrap-mode: initial;
+    text-wrap-style: pretty;
+    margin: 0 0 10px;
+}
+.details .info-column {
+    margin-top: 50px;
+    flex-grow: 2;
+    text-align: left;
+    display: block;
+}
+.details .info-column .infoBlock {
+    margin-bottom: 8vh;
+}
+.details .info-column .infoBlock .infoLabel {
+    color: white;
+    font-size: 14px;
+    opacity: .6;
+    z-index: 1;
+}
+.details .info-column .infoBlock .infoList {
+    font-size: 18px;
+    font-weight: 400;
+}
+.details .sheet {
+    width: 375px;
+    height: 900px;
+    display: block;
+    float: right;
+    margin-left: 15px;
+    margin-top: -675px;
+    z-index: 100;
 }
