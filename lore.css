@@ -68,81 +68,46 @@ body {
     background-image: linear-gradient(to right, #8a24a3, #d38ae5);
 }
 
-/* Banner */
-
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .banner img {
+    position: relative;
     display: block;
     width: 100%;
     max-height: 400px;
     object-fit: cover;
     opacity: 0.9;
     filter: brightness(0.5);
-    border-bottom: 5px solid #747474;
-    z-index: -999;
 }
-
-/* Description */
-.details {
-    display: flex;
+.banner h1 {
+    position: absolute;
+    margin-top: -15px;
     text-align: center;
-    margin: 0 auto;
-    padding: 0 30px;
+    font-family: Impact, sans-serif;
+    font-size: 52px;
+    background-image: linear-gradient(to right, #fa8c16, #f7de20);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
 }
-.infoText {
-    color: white;
+#summary {
+    position: relative;
+    text-align: center;
+    margin-top: -20px;
 }
-.infoList {
-    color: white;
-}
-p {
-    font-weight: 300;
+.label {
     font-size: 18px;
-    line-height: 24px;
-    text-wrap-mode: initial;
-    text-wrap-style: pretty;
-    margin: 0 0 10px;
-}
-.details .info-column {
-    margin-top: 50px;
-    flex-grow: 2;
-    text-align: left;
-    display: block;
-}
-.details .info-column .infoBlock {
-    margin-bottom: 8vh;
-}
-.details .info-column .infoBlock .infoLabel {
     color: white;
-    font-size: 14px;
     opacity: .6;
-    z-index: 1;
 }
-.details .info-column .infoBlock .infoList {
+#summary p {
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 24px;
     font-size: 18px;
-    font-weight: 400;
-}
-.details .sheet {
-    width: 375px;
-    height: 900px;
-    display: block;
-    float: right;
-    margin-left: 15px;
-    margin-top: -575px;
-    z-index: 100;
-}
-
-.carousel {
-    margin-left: 70px;
-    margin-top: -300px;
-}
-
-.site-footer {
-    margin-top: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.site-footer p{
-    color: rgb(135, 135, 135);
-    font-size: 14px;
 }
