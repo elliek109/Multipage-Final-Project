@@ -113,4 +113,30 @@ body {
 }
 #characters h2 {
     font-size: 30px;
+    margin-top: 80px;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.grid-wrap {
+    margin: 0 -5px;
+}
+.grid-wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.card {
+    box-shadow: 0 3px 7px 0 rgb(76, 76, 76);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 20%;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px 0 gray;
+}
+.container {
+    padding: 2px 16px;
 }
