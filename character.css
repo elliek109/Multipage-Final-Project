@@ -94,25 +94,23 @@ body {
     color: transparent;
     letter-spacing: 3px;
 }
-#summary {
+#characters {
     position: relative;
     text-align: center;
     margin-top: -20px;
 }
-.label {
-    font-size: 18px;
-    color: white;
-    opacity: .6;
-}
-#summary p {
+#characters p {
     font-weight: 300;
     margin-top: 40px;
     margin-bottom: 40px;
     line-height: 24px;
     font-size: 18px;
 }
-.site-footer p{
-    color: rgb(135, 135, 135);
-    font-size: 14px;
-    text-align: center;
+.label {
+    font-size: 18px;
+    color: white;
+    opacity: .6;
+}
+#characters h2 {
+    font-size: 30px;
 }
