@@ -121,7 +121,10 @@ body {
     padding: 0 10px;
 }
 .grid-wrap {
-    margin: 0 -5px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .grid-wrap:after {
     content: "";
@@ -129,9 +132,9 @@ body {
     clear: both;
 }
 .card {
+    margin-top: 20px;
     box-shadow: 0 3px 7px 0 rgb(76, 76, 76);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 20%;
 }
 .card:hover {
     transform: translateY(-5px);
@@ -139,4 +142,10 @@ body {
 }
 .container {
     padding: 2px 16px;
+}
+.site-footer p{
+    color: rgb(135, 135, 135);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 100px;
 }
