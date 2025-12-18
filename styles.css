@@ -28,7 +28,6 @@ body {
     top: 0;
     z-index: 999;
 }
-
 .brand img {
     position: sticky;
     top: 0;
@@ -37,7 +36,12 @@ body {
     object-fit: contain;
     z-index: 999;
 }
-
+.nav::before {
+    content: none !important
+}
+.nav::after {
+    content: none !important
+}
 .nav-links {
     position: sticky;
     top: 0;
@@ -146,12 +150,12 @@ p {
     color: rgb(135, 135, 135);
     font-size: 14px;
 }
-@media (orientation: portrait) {
+@media (max-width: 1135px) {
     .details .sheet {
         margin-top: -200px;
     }
 }
-@media (orientation: landscape) {
+@media (min-width: 1135px) {
     .details .sheet {
         margin-top: -575px;
     }
